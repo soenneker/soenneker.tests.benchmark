@@ -1,6 +1,7 @@
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Reports;
+using System.Threading;
 using Xunit;
 
 namespace Soenneker.Tests.Benchmark;
@@ -13,6 +14,8 @@ public abstract class BenchmarkTest
     protected ManualConfig DefaultConf { get; }
 
     protected ITestOutputHelper OutputHelper { get; set; }
+
+    protected CancellationToken CancellationToken => TestContext.Current.CancellationToken;
 
     protected BenchmarkTest(ITestOutputHelper outputHelper)
     {

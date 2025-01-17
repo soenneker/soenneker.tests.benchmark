@@ -33,6 +33,10 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="0a2wgumz.xtb~" />
+    </ItemGroup>
     
     <ItemGroup>
         <None Include="..\CONTRIBUTING.md" Link="CONTRIBUTING.md" />
