@@ -1,6 +1,7 @@
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Reports;
+using Xunit;
 
 namespace Soenneker.Tests.Benchmark;
 
@@ -11,8 +12,12 @@ public abstract class BenchmarkTest
 {
     protected ManualConfig DefaultConf { get; }
 
-    protected BenchmarkTest()
+    protected ITestOutputHelper OutputHelper { get; set; }
+
+    protected BenchmarkTest(ITestOutputHelper outputHelper)
     {
+        OutputHelper = outputHelper;
+
         DefaultConf = ManualConfig.Create(DefaultConfig.Instance).WithOptions(ConfigOptions.DisableOptimizationsValidator);
         DefaultConf.SummaryStyle = SummaryStyle.Default.WithRatioStyle(RatioStyle.Trend);
     }
