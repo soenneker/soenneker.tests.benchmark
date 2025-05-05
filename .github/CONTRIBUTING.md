@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Tests.Benchmark
+﻿# Contributing to Soenneker.Tests.Benchmark
 
 We're excited that you're interested in contributing!
 
