@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Tests.Benchmark.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Tests.Benchmark\Soenneker.Tests.Benchmark.csproj" />
     </ItemGroup>
 
     <ItemGroup>
