@@ -15,7 +15,7 @@
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Tests.Benchmark</AssemblyName>
         <PackageId>Soenneker.Tests.Benchmark</PackageId>
-        <PackageTags>tests benchmark benchmarkdotnet xunit test unit fixture performance benchmarktest util csharp dotnet c# .net</PackageTags>
+        <PackageTags>tests benchmark benchmarkdotnet test unit fixture performance benchmarktest util csharp dotnet c# .net</PackageTags>
         <Copyright>Copyright © 2025-2026 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
