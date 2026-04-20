@@ -56,8 +56,7 @@ jobs:
         run: dotnet build test/Soenneker.Tests.Benchmark.Tests/Soenneker.Tests.Benchmark.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.Tests.Benchmark.Tests/Soenneker.Tests.Benchmark.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
-
+        run: dotnet test --project test/Soenneker.Tests.Benchmark.Tests/Soenneker.Tests.Benchmark.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
 
       - name: Restore library
         run: dotnet restore src/Soenneker.Tests.Benchmark/Soenneker.Tests.Benchmark.csproj --verbosity minimal

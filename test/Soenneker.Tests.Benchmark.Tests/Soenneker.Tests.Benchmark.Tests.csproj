@@ -5,23 +5,14 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
-        <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
-        <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
-        <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
-
     </PropertyGroup>
-
-    <ItemGroup><PackageReference Include="xUnit.v3" Version="3.2.2" />
-    </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\Soenneker.Tests.Benchmark\Soenneker.Tests.Benchmark.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="testconfig.json">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
+        <PackageReference Include="TUnit" Version="1.37.0" />
     </ItemGroup>
 
 </Project>
