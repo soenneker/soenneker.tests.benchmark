@@ -1,10 +1,8 @@
-using Xunit;
-
 namespace Soenneker.Tests.Benchmark.Tests;
 
 public class BenchmarkTestTests
 {
-    [Fact]
+    [Test]
     public void Default()
     {
 
