@@ -5,8 +5,7 @@ using BenchmarkDotNet.Reports;
 namespace Soenneker.Tests.Benchmark;
 
 /// <summary>
-/// An abstract class for benchmarking tests in .NET, integrating
-/// BenchmarkDotNet, providing a method to log benchmark summaries asynchronously.
+/// Provides a reusable BenchmarkDotNet configuration for benchmark test classes.
 /// </summary>
 public abstract class BenchmarkTest
 {
