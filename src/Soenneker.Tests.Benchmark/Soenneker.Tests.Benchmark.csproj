@@ -45,6 +45,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Benchmarking.Extensions.Summary" Version="4.0.141" />
+        <PackageReference Include="Soenneker.Benchmarking.Extensions.Summary" Version="4.0.142" />
     </ItemGroup>
 </Project>
